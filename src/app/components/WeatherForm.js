@@ -10,7 +10,7 @@ const WeatherForm = props => (
                 <input type= "hidden" name = "country" placeholder = "Your country Name"
                 className = "form-control"/>
             </div>
-            <button hidden = 'true' className="btn btn-success btn-block">
+            <button className="redondeado2">
                 Obtener clima   
             </button>
         </form>
