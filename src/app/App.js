@@ -103,7 +103,7 @@ class App extends Component {
                         </div>
 
                         <td className = "currentCity"> 
-                            <MedellinInfo {...this.me}/> 
+                            <MedellinInfo {...this.state}/> 
                         </td>
                     </tr>
             </table>
