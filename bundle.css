@@ -52,6 +52,10 @@ table{
     font-size: 20px;
   }
 
+.redondeado2 {
+    border-radius: 5px;
+    font-size: 10px;
+  }
 
 .descripcion{
     text-align: right;
