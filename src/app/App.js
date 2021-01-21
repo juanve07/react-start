@@ -5,6 +5,9 @@ import WeatherForm from './components/WeatherForm';
 import MedellinInfo from './components/MedellinInfo';
 
 import {WEATHER_KEY} from './keys';
+import Medallo from './components/MedellinInfo';
+import OtherInfo from './components/otherInfo';
+import OtherInfo2 from './components/otherInfo2';
 
 class App extends Component {
 
@@ -73,7 +76,7 @@ class App extends Component {
         const responseMede = await fetch(API_URL_MEDE); /* await es para  seguir el codigo*/
         const dataMede = await responseMede.json();
 
-        medellin= {
+        this.Medallo({
             temperature: dataMede.main.temp,
             tempMin: dataMede.main.temp_min,
             tempMax: dataMede.main.temp_max,
@@ -85,7 +88,7 @@ class App extends Component {
             city: dataMede.name,
             country: dataMede.sys.country,
             error: null
-        }
+        })
     }
 
     render(){
@@ -99,11 +102,17 @@ class App extends Component {
                             <br></br>
                             <tr className = "tempCity"> 
                                 <WeatherInfo {...this.state}/> 
+                                <td className = "tempCity"> 
+                                    <OtherInfo/> 
+                                </td>
+                                <td className = "tempCity"> 
+                                    <OtherInfo2/> 
+                                </td>
                             </tr>
                         </div>
 
-                        <td className = "currentCity"> 
-                            <MedellinInfo {...this.state}/> 
+                        <td className = "currentCity">
+                                <MedellinInfo {...this.state}/>
                         </td>
                     </tr>
             </table>

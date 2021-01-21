@@ -1,7 +1,6 @@
 import React from 'react';
 
 const WeatherInfo = props => {
-    console.log(props);
     const URL_ICON = "http://openweathermap.org/img/wn/"+props.iconId+"@2x.png"
     return (
         <div>

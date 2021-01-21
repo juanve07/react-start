@@ -46,9 +46,9 @@ table{
 
 .redondeado {
     border-radius: 5px;
-    min-width: 800px;
-    min-height: 40px;
-    margin-left: 40px;
+    margin-right: 2.5em;
+    min-height: 2.5em;
+    margin-left: 2.5em;
     font-size: 20px;
   }
 
